@@ -100,12 +100,11 @@
 
 <meta name="description" content="hahaha">
 <meta property="og:type" content="website">
-<meta property="og:title" content="categories">
-<meta property="og:url" content="blog.emmm.cloud&#x2F;%C2%96categories&#x2F;index.html">
+<meta property="og:title" content="MyFirst blog">
+<meta property="og:url" content="blog.emmm.cloud&#x2F;archives&#x2F;2020&#x2F;index.html">
 <meta property="og:site_name" content="MyFirst blog">
 <meta property="og:description" content="hahaha">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-19T08:40:44.979Z">
 <meta name="twitter:card" content="summary">
 
 
@@ -136,7 +135,7 @@
 
 
 
-  <link rel="canonical" href="blog.emmm.cloud/categories/"/>
+  <link rel="canonical" href="blog.emmm.cloud/archives/2020/"/>
 
 
 
@@ -154,7 +153,7 @@
     })();
 </script>
 
-  <title>categories | MyFirst blog</title>
+  <title>Archive | MyFirst blog</title>
 
   
       <!-- 球型气泡标签云 -->
@@ -181,7 +180,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 
     <!--fork me from github-->
@@ -346,181 +345,74 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-    
-    
-    <div class="post-block page">
-      <header class="post-header">
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
 
-	<h2 class="post-title" itemprop="name headline">categories</h2>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
+      <span class="archive-page-counter">
         
         
-          <div class="category-all-page">
-            <div class="category-all-title">
-                No categories
-            </div>
-            <div class="category-all">
-              
-            </div>
+        
+          
+        
+        Um..! 4 posts in total. Keep on posting.
+      </span>
 
-            
-                 
-                 <style>
+      
 
-  .categorylove {
-      width: 500px;
-      height: 650px;
-      position: relative;
-      margin: 60px auto;
-  }
+        
+        
+        
 
-  .categorylove a {
-      position: absolute;
-      left: 0;
-      //color: goldenrod;
-      //color: #e804048f;
-      font-size: 20px;
-      font-family: sans-serif;
-      text-shadow: 0 0 1em white;
-      animation:
-          x-move 10s ease-in-out infinite alternate,
-          y-move 20s linear infinite;
-      animation-delay: calc(30s / var(--particles) * var(--n) * -1);
-      user-select: auto; // none
-  }
-
-  .categorylove a:first-child {
-      color: orangered;
-      font-size: 3em;
-      text-shadow:
-          0 0 0.1em black,
-          0 0 1em white;
-      z-index: 1;
-  }
-
-  @keyframes x-move {
-      to {
-          left: 450px;
-      }
-  }
-
-  @keyframes y-move {
-      0% { transform: translateY(180px); }
-      10% { transform: translateY(45px); }
-      15% { transform: translateY(5px); }
-      18% { transform: translateY(0); }
-      20% { transform: translateY(5px); }
-      22% { transform: translateY(35px); }
-      24% { transform: translateY(65px); }
-      25% { transform: translateY(110px); }
-      26% { transform: translateY(65px); }
-      28% { transform: translateY(35px); }
-      30% { transform: translateY(5px); }
-      32% { transform: translateY(0); }
-      35% { transform: translateY(5px); }
-      40% { transform: translateY(45px); }
-      50% { transform: translateY(180px); }
-      71% { transform: translateY(430px); }
-      72.5% { transform: translateY(440px); }
-      75% { transform: translateY(450px); }
-      77.5% { transform: translateY(440px); }
-      79% { transform: translateY(430px); }
-      100% { transform: translateY(180px); }
-  }
-
-  /* 移动端样式 */
-  @media (max-width: 767px) {
-    .categorylove{
-        width: 360px;
-        height: 450px;
-        margin: 30px auto;
-    }
-    @keyframes x-move {
-        to {
-            left: 285px;
-        }
-    }
-  }
-
-</style>
-
-<div class="categorylove"></div>
-
-<script type="text/javascript">
-
-      var categories = document.getElementsByClassName('category-all');
-     //var categories = document.querySelector('.category-all');
-
-     //隐藏category-all这个div
-     categories[0].setAttribute("hidden", "hidden");
-
-     var category = categories[0].getElementsByTagName('a');
-
-     var words = ['❤️'];
-     for(var i = 0 ; i < category.length ; i ++){
-       // words.push(category[i].innerHTML)
-         words.push(category[i]);
-         words.push('♠');
-     }
-     words.push('💕');
-
-     var dom = {
-         love: document.querySelector('.categorylove')
-     }
-
-     dom.love.style.setProperty('--particles', words.length)
-
-     words.forEach((word, i) => {
-
-         let atag = document.createElement('a');
-         atag.style.setProperty('--n', i + 1);
-
-         atag.style.setProperty('text-decoration', 'none');
-         atag.style.setProperty('border-bottom', 'none');
-
-         var r=Math.floor(Math.random()*75+130);
-         var g=Math.floor(Math.random()*75+100);
-         var b=Math.floor(Math.random()*75+80);
-         atag.style.setProperty("color", "rgb("+r+","+g+","+b+")");
-
-         atag.setAttribute("href", word.href);
-         atag.innerText = word.innerText;
-
-         if(word.href == undefined){
-            atag.setAttribute("href", "#");
-            atag.innerText = word;
-         }
-
-         dom.love.appendChild(atag);
-     })
-
-</script>
-
-            
-
+        
+          
+          <div class="collection-title">
+            <h2 class="archive-year" id="archive-year-2020">2020</h2>
           </div>
-
-        <!-- 友情链接-->
         
+        
+
+        
+
+  <article class="my-post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="my-post-header">
+
+      <div class="my-post-meta">
+        <time class="my-post-time" itemprop="dateCreated"
+              datetime="2020-01-11T16:49:25+08:00"
+              content="2020-01-11" >
+          01-11
+        </time>
       </div>
+
+      <h3 class="my-post-title">
+        
+            <a class="my-post-title-link" href="/2020/01/11/%E6%80%8E%E4%B9%88%E4%BB%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E4%B8%8B%E8%BD%BD%E8%B6%85%E8%BF%874G%E7%9A%84%E6%96%87%E4%BB%B6%EF%BC%9F/" itemprop="url">
+              
+                <span itemprop="name">怎么从Linux服务器上下载超过4G的文件？</span>
+              
+            </a>
+        
+      </h3>
+
+    </header>
+  </article>
+
+
+
       
-      
-      
+
     </div>
-    
-    
-    
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
@@ -528,13 +420,6 @@
 
 
           
-
-  
-    <div class="comments" id="comments">
-    </div>
-  
-
-
 
 
 
@@ -1198,10 +1083,6 @@ show_date_time();
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
