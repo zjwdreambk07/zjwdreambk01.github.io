@@ -87,25 +87,29 @@
 
 
 
-  <meta name="keywords" content="Hexo个人博客,技术分享,Leaf,Github Pages,博客相册" />
+  <meta name="keywords" content="个人博客,博客相册" />
+
+
+
+
+  
+
+
+  <link rel="alternate" href="/atom.xml" title="MyFirst blog" type="application/atom+xml" />
 
 
 
 
 
 
-
-
-
-
-<meta name="description" content="type: categories&#x2F;tags">
+<meta name="description" content="hahaha">
 <meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="emmm.cloud&#x2F;tags&#x2F;index.html">
+<meta property="og:title" content="MyFirst blog">
+<meta property="og:url" content="blog.emmm.cloud/categories/Linux/index.html">
 <meta property="og:site_name" content="MyFirst blog">
-<meta property="og:description" content="type: categories&#x2F;tags">
-<meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-11-19T08:14:40.113Z">
+<meta property="og:description" content="hahaha">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="zjwdreambk">
 <meta name="twitter:card" content="summary">
 
 
@@ -136,7 +140,7 @@
 
 
 
-  <link rel="canonical" href="emmm.cloud/tags/"/>
+  <link rel="canonical" href="blog.emmm.cloud/categories/Linux/"/>
 
 
 
@@ -154,7 +158,7 @@
     })();
 </script>
 
-  <title>tags | MyFirst blog</title>
+  <title>Category: Linux | MyFirst blog</title>
 
   
       <!-- 球型气泡标签云 -->
@@ -170,7 +174,7 @@
 
 
 
-</head>
+<meta name="generator" content="Hexo 4.2.0"></head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
@@ -181,7 +185,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <!--fork me from github-->
@@ -231,7 +235,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/archives/%20" rel="section">
+          <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
@@ -241,7 +245,7 @@
       
         
         <li class="menu-item menu-item-categories">
-          <a href="/categories/%20" rel="section">
+          <a href="/categories" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
             
@@ -251,7 +255,7 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/tags/%20" rel="section">
+          <a href="/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
             
@@ -261,7 +265,7 @@
       
         
         <li class="menu-item menu-item-movies">
-          <a href="/movies/%20" rel="section">
+          <a href="/movies" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-film"></i> <br />
             
@@ -293,7 +297,7 @@
       
         <li class="menu-item menu-item-search">
           
-            <a href="javascript:;" target="_blank" rel="noopener" class="popup-trigger">
+            <a href="javascript:;" class="popup-trigger">
           
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
@@ -308,22 +312,26 @@
   
     <div class="site-search">
       
-  <div class="popup search-popup local-search-popup">
-  <div class="local-search-header clearfix">
-    <span class="search-icon">
-      <i class="fa fa-search"></i>
-    </span>
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
     <span class="popup-btn-close">
       <i class="fa fa-times-circle"></i>
     </span>
-    <div class="local-search-input-wrapper">
-      <input autocomplete="off"
-             placeholder="Searching..." spellcheck="false"
-             type="text" id="local-search-input">
-    </div>
   </div>
-  <div id="local-search-result"></div>
-</div>
+
 
 
 
@@ -342,255 +350,55 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
-    
-    
-    <div class="post-block page">
-      <header class="post-header">
+  
+  
+  
+  <div class="post-block category">
 
-	<h2 class="post-title" itemprop="name headline">tags</h2>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
-        
-        
-          <div class="tag-cloud">
-
-            <div class="tag-cloud-title">
-                No tags
-            </div>
-
-            <div class="tag-cloud-tags">
-              
-            </div>
-          </div>
-
-          
-               
-               <style>
-  .wrapper {
-    margin: 0 auto;
-    padding:0;
-    width: 700px;
-    min-width: 100px;
-  }
-  .tagbubble {
-    position: relative;
-    margin-top: 260px;
-  }
-  .tagbubble a {
-    display: block;
-    border-radius: 50%;
-    color: #fff;
-    font-weight: bold;
-    font-size: 14px;
-    text-decoration: none;
-    text-align: center;
-  }
-
-  .b0{
-      width: 95px;
-      height: 95px;
-      line-height: 95px;
-  }
-  .b1{
-      width: 70px;
-      height: 70px;
-      line-height: 70px;
-  }
-  .b2{
-      width: 60px;
-      height: 60px;
-      line-height: 60px;
-  }
-  .b3{
-      width: 45px;
-      height: 45px;
-      line-height: 45px;
-  }
-
-  .c0{
-      background: -moz-linear-gradient(top, #d1e5fd 0%, #3d86f4 100%);
-      background: -webkit-linear-gradient(top, #d1e5fd 0%,#3d86f4 100%);
-      background: -o-linear-gradient(top, #d1e5fd 0%,#3d86f4 100%);
-      background: -ms-linear-gradient(top, #d1e5fd 0%,#3d86f4 100%);
-      background: linear-gradient(to bottom, #d1e5fd 0%,#3d86f4 100%);
-  }
-  .c1{
-      background: -moz-linear-gradient(top, #b9f8ff 0%, #1de7ff 100%);
-      background: -webkit-linear-gradient(top, #b9f8ff 0%,#1de7ff 100%);
-      background: -o-linear-gradient(top, #b9f8ff 0%,#1de7ff 100%);
-      background: -ms-linear-gradient(top, #b9f8ff 0%,#1de7ff 100%);
-      background: linear-gradient(to bottom, #b9f8ff 0%,#1de7ff 100%);
-  }
-  .c2{
-      background: -moz-linear-gradient(top, #fff4e2 0%, #ffd79c 100%);
-      background: -webkit-linear-gradient(top, #fff4e2 0%,#ffd79c 100%);
-      background: -o-linear-gradient(top, #fff4e2 0%,#ffd79c 100%);
-      background: -ms-linear-gradient(top, #fff4e2 0%,#ffd79c 100%);
-      background: linear-gradient(to bottom, #fff4e2 0%,#ffd79c 100%);
-  }
-  .c3{
-      background: -moz-linear-gradient(top, #fef4fa 0%, #fbbae0 100%);
-      background: -webkit-linear-gradient(top, #fef4fa 0%,#fbbae0 100%);
-      background: -o-linear-gradient(top, #fef4fa 0%,#fbbae0 100%);
-      background: -ms-linear-gradient(top, #fef4fa 0%,#fbbae0 100%);
-      background: linear-gradient(to bottom, #fef4fa 0%,#fbbae0 100%);
-  }
-  .c4{
-      background: -moz-linear-gradient(top, #fedc90 0%, #ffb515 100%);
-      background: -webkit-linear-gradient(top, #fedc90 0%,#ffb515 100%);
-      background: -o-linear-gradient(top, #fedc90 0%,#ffb515 100%);
-      background: -ms-linear-gradient(top, #fedc90 0%,#ffb515 100%);
-      background: linear-gradient(to bottom, #fedc90 0%,#ffb515 100%);
-  }
-  .c5{
-      background: -moz-linear-gradient(top, #bcf7ca 0%, #1fda4b 100%);
-      background: -webkit-linear-gradient(top, #bcf7ca 0%,#1fda4b 100%);
-      background: -o-linear-gradient(top, #bcf7ca 0%,#1fda4b 100%);
-      background: -ms-linear-gradient(top, #bcf7ca 0%,#1fda4b 100%);
-      background: linear-gradient(to bottom, #bcf7ca 0%,#1fda4b 100%);
-  }
-  .c6{
-      background: -moz-linear-gradient(top, #f7cdf8 0%, #db43e7 100%);
-      background: -webkit-linear-gradient(top, #f7cdf8 0%,#db43e7 100%);
-      background: -o-linear-gradient(top, #f7cdf8 0%,#db43e7 100%);
-      background: -ms-linear-gradient(top, #f7cdf8 0%,#db43e7 100%);
-      background: linear-gradient(to bottom, #f7cdf8 0%,#db43e7 100%);
-  }
-
-  /* 移动端样式 */
-  @media (max-width: 767px){
-    .wrapper {
-        width: 10px;
-        margin-left:20px;
-        min-width: 0px;
-    }
-    .tagbubble{
-        width: 300px;
-        min-width: 0px;
-        margin-top: 175px;
-        margin-left: 10px;
-    }
-    .tagbubble a {
-      font-size: 13px;
-    }
-    .b0{
-        width: 65px;
-        height: 65px;
-        line-height: 60px;
-    }
-    .b1{
-        width: 50px;
-        height: 50px;
-        line-height: 45px;
-    }
-    .b2{
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-    }
-    .b3{
-        width: 35px;
-        height: 35px;
-        line-height: 35px;
-    }
-  }
-
-</style>
-
-<div class="wrapper">
-    <div class="tagbubble">
-
-    </div>
-</div>
-<script type="text/javascript">
-
-     var alltags = document.getElementsByClassName('tag-cloud-tags');
-
-     //隐藏tag-cloud-tags这个div
-     alltags[0].setAttribute("hidden", "hidden");
-
-     var tags = alltags[0].getElementsByTagName('a');
-
-     var bo = new Array();
-     var co = new Array();
-     for(var i=0;i<4;i++){
-        bo.push("b" + i);
-     }
-     for(var i=0;i<7;i++){
-        co.push("c" + i);
-     }
-
-     var divDom = document.querySelector('.tagbubble')
-     //var divDom = document.getElementsByClassName('tagbubble')[0];
-     for(var i=0;i<tags.length;i++){
-        var atag = document.createElement('a');
-        var boStyle = bo[Math.floor(Math.random()*4)];
-        var coStyle = co[Math.floor(Math.random()*7)];
-        if(tags[i].innerText.length > 10){
-            boStyle = "b0";
-        }else if(tags[i].innerText.length > 5 && tags[i].innerText.length < 10){
-            boStyle = "b1";
-        }
-        atag.setAttribute("class", boStyle+" "+coStyle);
-        atag.setAttribute("href", tags[i].href);
-        atag.innerText = tags[i].innerText;
-        divDom.appendChild(atag);
-    }
-
-    function browserRedirect() {
-        var sUserAgent = navigator.userAgent.toLowerCase();
-        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-        var bIsAndroid = sUserAgent.match(/android/i) == "android";
-        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-            //移动端页面
-            return 80;
-        } else {
-            //pc端页面
-            return 140;
-        }
-    }
-
-    var tagRadius = browserRedirect();
-
-    /*3D标签云*/
-    tagcloud({
-        selector: ".tagbubble",   //元素选择器
-        fontsize: 14,             //基本字体大小, 单位px
-        radius: tagRadius,        //滚动半径, 单位px 页面宽度和高度的五分之一
-        mspeed: "slow",           //滚动最大速度, 取值: slow, normal(默认), fast
-        ispeed: "slow",           //滚动初速度, 取值: slow, normal(默认), fast
-        direction: 135,           //初始滚动方向, 取值角度(顺时针360): 0对应top, 90对应left, 135对应right-bottom(默认)...
-        keep: true               //鼠标移出组件后是否继续随鼠标滚动, 取值: false, true(默认) 对应 减速至初速度滚动, 随鼠标滚动
-    });
-</script>
-
-          
-
-        
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h2>Linux<small>Category</small>
+        </h2>
       </div>
+
       
-      
+        
+
+  <article class="my-post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="my-post-header">
+
+      <div class="my-post-meta">
+        <time class="my-post-time" itemprop="dateCreated"
+              datetime="2020-01-14T17:53:18+08:00"
+              content="2020-01-14" >
+          01-14
+        </time>
+      </div>
+
+      <h3 class="my-post-title">
+        
+            <a class="my-post-title-link" href="/2020/01/14/%E6%80%8E%E4%B9%88%E4%BB%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E4%B8%8B%E8%BD%BD%E8%B6%85%E8%BF%874G%E7%9A%84%E6%96%87%E4%BB%B6%EF%BC%9F/" itemprop="url">
+              
+                <span itemprop="name">怎么从Linux服务器上下载超过4G的文件？</span>
+              
+            </a>
+        
+      </h3>
+
+    </header>
+  </article>
+
+
       
     </div>
-    
-    
-    
+
   </div>
+  
+  
+  
+
+  
+
 
 
           </div>
@@ -598,13 +406,6 @@
 
 
           
-
-  
-    <div class="comments" id="comments">
-    </div>
-  
-
-
 
 
 
@@ -649,20 +450,50 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/archives/%20%7C%7C%20archive">
+                <a href="/archives%7C%7C%20archive">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/%C2%96categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">tags</span>
+                
+              </div>
             
 
           </nav>
 
+          
+            <div class="feed-link motion-element">
+              <a href="/atom.xml" rel="alternate">
+                <i class="fa fa-rss"></i>
+                RSS
+              </a>
+              <!-- 为Hexo Next主题添加哈林摇特效  -->
+              <a title="收藏到书签，偶尔High一下^_^" rel="alternate" class="mw-harlem_shake_slow wobble shake" href="javascript:void(0)" onclick="javascript:(    /*     * Copyright (C) 2015 Rocko (rocko.xyz) <rocko.zxp@gmail.com>     *     * Licensed under the Apache License, Version 2.0 (the 'License');     * you may not use this file except in compliance with the License.     * You may obtain a copy of the License at     *     *      http://www.apache.org/licenses/LICENSE-2.0     *     * Unless required by applicable law or agreed to in writing, software     * distributed under the License is distributed on an 'AS IS' BASIS,     * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.     * See the License for the specific language governing permissions and     * limitations under the License.     */    function go() {        function c() {        var e = document.createElement('link');        e.setAttribute('type', 'text/css');        e.setAttribute('rel', 'stylesheet');        e.setAttribute('href', f);        e.setAttribute('class', l);        document.body.appendChild(e)    }     function h() {        var e = document.getElementsByClassName(l);        for (var t = 0; t < e.length; t++) {            document.body.removeChild(e[t])        }    }     function p() {        var e = document.createElement('div');        e.setAttribute('class', a);        document.body.appendChild(e);        setTimeout(function() {            document.body.removeChild(e)        }, 100)    }     function d(e) {        return {            height : e.offsetHeight,            width : e.offsetWidth        }    }     function v(i) {        var s = d(i);        return s.height > e &amp;&amp; s.height < n &amp;&amp; s.width > t &amp;&amp; s.width < r    }     function m(e) {        var t = e;        var n = 0;        while (!!t) {            n += t.offsetTop;            t = t.offsetParent        }        return n    }     function g() {        var e = document.documentElement;        if (!!window.innerWidth) {            return window.innerHeight        } else if (e &amp;&amp; !isNaN(e.clientHeight)) {            return e.clientHeight        }        return 0    }     function y() {        if (window.pageYOffset) {            return window.pageYOffset        }        return Math.max(document.documentElement.scrollTop, document.body.scrollTop)    }     function E(e) {        var t = m(e);        return t >= w &amp;&amp; t <= b + w    }     var songs = [                'http://s3.amazonaws.com/moovweb-marketing/playground/harlem-shake.mp3', 'http://www.ytmp3.cn/down/57563.mp3'  ];    function S() {        var e = document.getElementById('audio_element_id');        if(e != null){            var index = parseInt(e.getAttribute('curSongIndex'));            if(index > songs.length - 2) {                index = 0;            } else {                index++;            }            e.setAttribute('curSongIndex', index);            N();        }        e.src = i;        e.play()    }     function x(e) {        e.className += ' ' + s + ' ' + o    }     function T(e) {        e.className += ' ' + s + ' ' + u[Math.floor(Math.random() * u.length)]    }     function N() {        var e = document.getElementsByClassName(s);        var t = new RegExp('\\b' + s + '\\b');        for (var n = 0; n < e.length; ) {            e[n].className = e[n].className.replace(t, '')        }    }    function initAudioEle() {        var e = document.getElementById('audio_element_id');        if(e === null){            e = document.createElement('audio');            e.setAttribute('class', l);            e.setAttribute('curSongIndex', 0);            e.id = 'audio_element_id';            e.loop = false;            e.bgcolor = 0;            e.addEventListener('canplay', function() {            setTimeout(function() {                x(k)            }, 500);            setTimeout(function() {                N();                p();                for (var e = 0; e < O.length; e++) {                    T(O[e])                }            }, 15500)        }, true);        e.addEventListener('ended', function() {            N();            h();            go();        }, true);        e.innerHTML = ' <p>If you are reading this, it is because your browser does not support the audio element. We recommend that you get a new browser.</p> <p>';        document.body.appendChild(e);        }    }        initAudioEle();    var e = 30;    var t = 30;    var n = 350;    var r = 350;    var curSongIndex = parseInt(document.getElementById('audio_element_id').getAttribute('curSongIndex'));    var i = songs[curSongIndex];        var s = 'mw-harlem_shake_me';    var o = 'im_first';    var u = ['im_drunk', 'im_baked', 'im_trippin', 'im_blown'];    var a = 'mw-strobe_light';    var f = 'https://rocko.xyz/css/harlem-shake-style.css';        var l = 'mw_added_css';    var b = g();    var w = y();    var C = document.getElementsByTagName('*');    var k = null;    for (var L = 0; L < C.length; L++) {        var A = C[L];        if (v(A)) {            if (E(A)) {                k = A;                break            }        }    }    if (A === null) {        console.warn('Could not find a node of the right size. Please try a different page.');        return    }    c();    S();    var O = [];    for (var L = 0; L < C.length; L++) {        var A = C[L];        if (v(A)) {            O.push(A)        }    }    })()">
+        <i class="fa fa-music"></i> High~
+</a>
+
+            </div>
           
 
           
@@ -730,15 +561,23 @@
                   
                   
                     <li class='my-links-of-blogroll-li'>
+                      <a href="/2020/02/19/%C2%96bugku-%E6%9D%82%E9%A1%B9-%E7%AD%BE%E5%88%B0%E9%A2%98/" title="bugku 杂项 签到题" target="_blank">bugku 杂项 签到题</a>
+                    </li>
+                  
+                    <li class='my-links-of-blogroll-li'>
+                      <a href="/2020/01/14/%E6%80%8E%E4%B9%88%E4%BB%8ELinux%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E4%B8%8B%E8%BD%BD%E8%B6%85%E8%BF%874G%E7%9A%84%E6%96%87%E4%BB%B6%EF%BC%9F/" title="怎么从Linux服务器上下载超过4G的文件？" target="_blank">怎么从Linux服务器上下载超过4G的文件？</a>
+                    </li>
+                  
+                    <li class='my-links-of-blogroll-li'>
+                      <a href="/2019/11/28/hello-world/" title="Hello World" target="_blank">Hello World</a>
+                    </li>
+                  
+                    <li class='my-links-of-blogroll-li'>
                       <a href="/2019/11/15/Hello/" title="Hello" target="_blank">Hello</a>
                     </li>
                   
                     <li class='my-links-of-blogroll-li'>
                       <a href="/2019/11/14/My-New-Post/" title="my first blog" target="_blank">my first blog</a>
-                    </li>
-                  
-                    <li class='my-links-of-blogroll-li'>
-                      <a href="/2019/11/14/hello-world/" title="Hello World" target="_blank">Hello World</a>
                     </li>
                   
                 </ul>
@@ -1097,7 +936,7 @@ show_date_time();
     <footer id="footer" class="footer">
       <div class="footer-inner">
         <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+<div class="copyright">&copy; 2019 &mdash; <span itemprop="copyrightYear">2020</span>
   <span class="with-love">
        <i class="fa fa-heartbeat"></i>
   </span>
@@ -1264,10 +1103,6 @@ show_date_time();
 
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
@@ -1319,7 +1154,7 @@ show_date_time();
     var isfetched = false;
     var isXml = true;
     // Search DB path;
-    var search_path = "";
+    var search_path = "search.xml";
     if (search_path.length === 0) {
       search_path = "search.xml";
     } else if (/json$/i.test(search_path)) {
@@ -1632,6 +1467,23 @@ show_date_time();
   </script>
 
 
+
+
+  
+  
+  
+    
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.min.css">
+
+  
+  
+    
+  
+  <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.4.1/dist/instantsearch.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
